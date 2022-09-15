@@ -64,7 +64,7 @@ public class authorize extends JFrame implements ActionListener
 	      {
 	    	 c.remove(label[2]);
 	         //Class.forName("com.mysql.jdbc.Driver");
-	         con = DriverManager.getConnection("jdbc:mysql://localhost:3306/MyProject","root","Nihith@8688184950");
+	         con = DriverManager.getConnection("jdbc:mysql://localhost:3306/MyProject","root","Monisha@8688184950");
 	         stmt = con.createStatement();
 	         rs = stmt.executeQuery("select * from login ");
 	         
@@ -177,7 +177,7 @@ public class authorize extends JFrame implements ActionListener
 					 c.remove(warn);
 			         String query = "insert into login values ( \""+ mail + "\" ,\"" + passw + "\");";
 			         //Class.forName("com.mysql.jdbc.Driver");
-			         con1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/MyProject","root","Nihith@8688184950");
+			         con1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/MyProject","root","Monisha@8688184950");
 			         stmt1 = con1.createStatement();
 			         if(stmt1.executeUpdate(query) == 1)
 			         {
@@ -224,7 +224,7 @@ public class authorize extends JFrame implements ActionListener
 					 c.remove(warn);
 			         String query = "delete from login where mail = \"" + st + "\";";
 			         //Class.forName("com.mysql.jdbc.Driver");
-			         con1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/MyProject","root","Nihith@8688184950");
+			         con1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/MyProject","root","Monisha@8688184950");
 			         stmt1 = con1.createStatement();
 			         if( stmt1.executeUpdate(query) == 1)
 			         {
@@ -261,7 +261,7 @@ public class authorize extends JFrame implements ActionListener
 					 c.remove(warn);
 			         String query = "update login set password = \"" + new_pass + "\" where mail = \"" + str +  "\";" ;
 			         //Class.forName("com.mysql.jdbc.Driver");
-			         con1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/MyProject","root","Nihith@8688184950");
+			         con1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/MyProject","root","Monisha@8688184950");
 			         stmt1 = con1.createStatement();
 			         if( stmt1.executeUpdate(query) == 1)
 			         {
